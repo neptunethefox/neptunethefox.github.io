@@ -9,6 +9,11 @@ theme:
   features:
     - navigation.footer
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
 plugins:
   - meta
   - blog

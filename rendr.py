@@ -21,6 +21,7 @@ def get_emojis(markdown: str) -> list[str]:
 def get_emoji_data(emoji_name: str) -> dict[str]:
     for emoji in EMOJI_DATA:
         if emoji["short"] == emoji_name:
+            # Found it!
             return emoji
     
     return {}
@@ -28,23 +29,17 @@ def get_emoji_data(emoji_name: str) -> dict[str]:
 
 def replace_emojis(markdown: str, hand_type: str, asset_path: str) -> list[str]:
     emojis = get_emojis(markdown)
-
     processed_markdown = markdown
 
     for emoji in emojis:
         data = get_emoji_data(emoji+"")
-
         if data != {}:
             processed_markdown = processed_markdown.replace(":{}:".format(emoji), MARKDOWN_TEMPLATE.format(data["desc"], "{}{}".format(asset_path, data["src"])))
 
-
     return processed_markdown
-        
 
 def render_document(markdown: str, config: dict[str]) -> str:
-    
     parsed = replace_emojis(markdown, config["emoji"]["hand_type"], "/assets/emoji/")
-
     return parsed
     
 
