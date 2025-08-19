@@ -5,8 +5,8 @@ emoji:
 
 assets:
   emoji:
-    path: "./assets/emoji"
-    data_file: "./assets/rendr/mtnt_2024.06_data.json"
+    path: "./docs/assets/emoji"
+    data_file: "./docs/assets/rendr/mtnt_2024.06_data.json"
     has_data: true
 
 rendr:
