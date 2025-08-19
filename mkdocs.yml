@@ -1,0 +1,10 @@
+site_name: Neptune's Corner
+
+# Default theme is fucking ugly
+theme:
+  name: material
+
+plugins:
+  - blog
+  - search
+
