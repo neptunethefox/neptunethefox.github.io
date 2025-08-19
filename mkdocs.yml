@@ -3,8 +3,13 @@ site_name: Neptune's Corner
 # Default theme is fucking ugly
 theme:
   name: material
+  palette:
+    scheme: slate
+
+  features:
+    - navigation.footer
 
 plugins:
+  - meta
   - blog
   - search
-

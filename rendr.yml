@@ -1,0 +1,17 @@
+emoji:
+  syntax: true
+  hand_type: "paw"
+  syntax_style: "discord"
+
+assets:
+  emoji:
+    path: "./assets/emoji"
+    data_file: "./assets/rendr/mtnt_2024.06_data.json"
+    has_data: true
+
+rendr:
+  markdown_dirs: [
+    "./docs/*.md",
+    "./docs/blog/*.md",
+    "./docs/blog/posts/*.md"
+  ]
