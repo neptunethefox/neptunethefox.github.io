@@ -4,11 +4,16 @@ site_name: Neptune's Corner
 theme:
   name: material
   palette:
+    primary: orange
     scheme: slate
 
   features:
     - navigation.footer
+    - navigation.indexes
+    - search.suggest
 
+  theme:
+    logo: material/weather-tornado
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -18,3 +23,8 @@ plugins:
   - meta
   - blog
   - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/neptunethefox

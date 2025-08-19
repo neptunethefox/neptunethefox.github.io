@@ -1,6 +1,18 @@
-# Main
+# Home
 
-<img alt="waving paw hand" src="/assets/emoji/expressions/hands/paw/wave_paw.svg" width="24"> Hiya! Welcome to my corner of the internet I guess.
+Hiya :wave_paw:! Welcome to my corner of the internet I guess.
 This site is pretty bearbones right now!
 
-Gotta love using software meant for docs for a personal site am i right.
+---
+## About
+Im a self-taught developer from Australia.
+
+Alot of my projects are closed source (as I normally don't finish them :crying:)
+
+However some do get open sourced!
+
+
+## Note
+This site *may* get replaced in the feature!
+
+(I find it really annoying with the emoji set I am using.)
