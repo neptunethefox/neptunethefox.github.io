@@ -1,0 +1,15 @@
+---
+const { title } = Astro.props;
+---
+
+<div class="window glass active" style="min-width: 400px; min-height: 100%;">
+    <div class="title-bar">
+        <div class="title-bar-text">{title}</div>
+        <div class="title-bar-controls">
+            <button aria-label="Close" onclick="alert('sorry nah :3')"></button>
+        </div>
+    </div>
+    <div class="window-body has-space">
+        <slot />
+    </div>
+</div>

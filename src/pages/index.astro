@@ -1,11 +1,29 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+    <div class="window-body has-space">
+        <h1 style="color: orange">Hi there! I am neptune!</h1>
+        <p>
+            This is all just a astro layout using <a
+                href="https://khang-nd.github.io/7.css/">7.css</a
+            >!!
+        </p>
+
+        <p>Site Completion: (Lets see if this hits 100%!)</p>
+        <div
+            role="progressbar"
+            class="animate"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="80"
+        >
+            <div style="width: 0.1%"></div>
+        </div><br />
+    </div>
+    <div class="status-bar">
+        <p class="status-bar-field">Press F1 for help</p>
+        <p class="status-bar-field">- spamton????</p>
+    </div>
 </Layout>

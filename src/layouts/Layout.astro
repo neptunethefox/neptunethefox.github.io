@@ -1,22 +1,70 @@
+---
+import "7.css/dist/7.css";
+import Window from "../components/Window.astro";
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Astro Basics</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="window glass active" style="min-width: 1000px;">
+                <div class="title-bar">
+                    <div class="title-bar-text">Neptunevile (Temp Name!)</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button
+                            aria-label="Close"
+                            onclick="alert('sorry nah :3')"></button>
+                    </div>
+                </div>
+                <slot />
+            </div>
+            <Window title="Buttons">
+                <div class="buttons">
+                    <img src="/88x31/paws.png" height="31" />
+                    <img src="/88x31/zen.png" height="31" />
+                    <img src="/88x31/astro.png" height="31" />
+                    <img
+                        src="https://88x31.kate.pet/madeon_linux.gif"
+                        height="31"
+                    />
+                </div>
+            </Window>
+        </div>
+    </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://static.soggy.cat/ssoggycat/goog/images/goog.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .buttons {
+        display: grid;
+        grid-auto-flow: row;
+        grid-row: 4;
+        grid-column: 2;
+    }
+
+    img {
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        image-rendering: -webkit-optimize-contrast;
+    }
 </style>
