@@ -1,0 +1,41 @@
+---
+import "7.css/dist/7.css";
+import Window from "../components/Window.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Neptunevile (Temp Name!)</title>
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>
+
+<style>
+    body {
+        display: flex;
+        gap: 16px;
+        flex-direction: row;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px 100px;
+    }
+
+    img {
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        image-rendering: -webkit-optimize-contrast;
+    }
+</style>

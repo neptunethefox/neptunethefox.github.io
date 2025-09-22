@@ -10,7 +10,7 @@ import Window from "../components/Window.astro";
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
-        <title>Astro Basics</title>
+        <title>Neptunevile (Temp Name!)</title>
     </head>
     <body>
         <div class="container">
@@ -29,9 +29,9 @@ import Window from "../components/Window.astro";
             </div>
             <Window title="Buttons" style="max-width: 1000px;">
                 <div class="buttons">
-                    <img src="/88x31/paws.png" height="31" />
                     <img src="/88x31/zen.png" height="31" />
                     <img src="/88x31/astro.png" height="31" />
+                    <img src="/88x31/paws.png" height="31" />
                     <img
                         src="https://88x31.kate.pet/madeon_linux.gif"
                         height="31"
@@ -57,9 +57,7 @@ import Window from "../components/Window.astro";
 
     .buttons {
         display: grid;
-        grid-auto-flow: row;
-        grid-row: 4;
-        grid-column: 2;
+        grid-template-columns: 100px 100px 100px 100px 100px;
     }
 
     img {
