@@ -135,7 +135,9 @@ https://developer.mozilla.org/ - Instead of ChatGPT please just use this...
 
 ## Code Editors/IDE's
 https://www.jetbrains.com/idea/ - Great Java/Kotlin IDE! Don't like the forced genAI though.
+
 https://github.com/VSCodium/vscodium - VSCode without Microsoft.
+
 https://zed.dev/ - Great replacement for VSCode/VSCodium! Please do `"disable_ai": true` and [disable all telemetry!](https://zed.dev/docs/telemetry) in your settings though.
 
 ---
