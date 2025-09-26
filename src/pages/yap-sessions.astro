@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/WindowLayout.astro";
+const yapSessions = Object.values(
+    import.meta.glob("./yapping/*.md", { eager: true }),
+);
+---
+
+<Layout>
+    <div class="window-body has-space">
+        <h1>Yap Sessions</h1>
+        <h2>I sorta just drop shit here sometimes.</h2>
+
+        <ul>
+            {
+                yapSessions.map((session) => (
+                    <li>
+                        <a href={session.url}>{session.frontmatter.title}</a>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</Layout>
