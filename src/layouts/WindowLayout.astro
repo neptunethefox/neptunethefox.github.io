@@ -28,11 +28,9 @@ import TopWindow from "../components/TopWindow.astro";
                 <div class="title-bar">
                     <div class="title-bar-text">Neptunevile (Temp Name!)</div>
                     <div class="title-bar-controls">
-                        <button aria-label="Minimize"></button>
-                        <button aria-label="Maximize"></button>
                         <button
                             aria-label="Close"
-                            onclick="alert('sorry nah :3')"></button>
+                            onclick="window.location.href = '/'"></button>
                     </div>
                 </div>
                 <slot />
@@ -56,6 +54,12 @@ import TopWindow from "../components/TopWindow.astro";
                     </a>
                     <a href="https://pages.github.com/">
                         <img src="/88x31/pages.png" height="31" />
+                    </a>
+                    <a href="https://godotengine.org/">
+                        <img
+                            src="https://88x31.kate.pet/godot.png"
+                            height="31"
+                        />
                     </a>
                     <img
                         src="https://88x31.kate.pet/madeon_linux.gif"
