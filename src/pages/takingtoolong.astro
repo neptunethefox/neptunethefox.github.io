@@ -1,0 +1,72 @@
+<div class="takingtoolong">
+    <img src="/toolong.png" width="256" />
+    <h1 id="text"></h1>
+</div>
+
+<audio id="player" src="/snd/snd_taking_too_long.wav"></audio>
+
+<script>
+    /* God this is ass. */
+    let audioPlayer = document.getElementById("player");
+    let played = false;
+    let textArr = ["YOUR ", "TAKING ", "TOO ", "LONG"];
+    if (audioPlayer) {
+        audioPlayer.onended = (ev) => {
+            window.location.href = "/";
+        };
+    }
+
+    var h1Thingy = window.document.getElementById("text");
+
+    if (h1Thingy == null) {
+        alert("Shit broke :(");
+        window.location.href = "/";
+    }
+
+    window.document.onclick = (ev) => {
+        if (played) return;
+
+        played = true;
+        audioPlayer.play();
+
+        var i = 0;
+        var textDisplay = "";
+        for (var txt of textArr) {
+            i++;
+            setTimeout(
+                (text) => {
+                    textDisplay += text;
+                    h1Thingy.innerText = textDisplay;
+                },
+                200 * i,
+                txt,
+            );
+        }
+    };
+</script>
+
+<style>
+    body {
+        font-family: monospace;
+        display: flex;
+        gap: 64px;
+        flex-direction: row;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        background-color: black;
+    }
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    img {
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        image-rendering: -webkit-optimize-contrast;
+    }
+</style>
