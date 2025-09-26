@@ -108,12 +108,14 @@ https://paintkiller.neocities.org/new/88x31
 
 https://matdoes.dev/buttons
 
+https://88x31.kate.pet/
+
 https://eightyeightthirty.one/
 
 ## CSS Frameworks
 https://tailwindcss.com/ - Eh? Its what every fucking vibe coded site uses but its OK... I guess... Its just inlined CSS...
 
-https://khang-nd.github.io/7.css/ - ~~So retro~~ Makes your site look like Windows 7.
+https://khang-nd.github.io/7.css/ - Makes your site look like Windows 7. In fact this very site uses it!
 
 https://github.com/botoxparty/XP.css - What 7.css is just Windows XP instead.
 
