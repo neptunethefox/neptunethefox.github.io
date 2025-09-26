@@ -13,7 +13,7 @@ https://archlinux.org/ - Arch Linux (btw). You don't need to be told what it is.
 
 https://omarchy.org/ - A Arch Linux (btw) based distro that comes bundled with hyprland by default!
 
-https://cachyos.org/ - A Arch Linux (btw) based distro that comes bundled with ~~AI Slop Configs~~ ""Features"" by default. [Can even become omarchy](https://github.com/mroboff/omarchy-on-cachyos)
+https://cachyos.org/ - A Arch Linux (btw) based distro. It's not that special.
 
 https://distrowatch.com/ - A **HUGE** list of Linux distros!
 
